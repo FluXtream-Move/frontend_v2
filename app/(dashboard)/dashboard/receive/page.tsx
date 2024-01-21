@@ -43,7 +43,7 @@ type Input = z.infer<typeof receiveSchema>;
 
 
 const breadcrumbItems = [{ title: "Receive Stream", link: "/dashboard/receive" }];
-export default function page() {
+export default function Page() {
     const { toast } = useToast();
   const [formStep, setFormStep] = React.useState(0);
   const form = useForm<Input>({

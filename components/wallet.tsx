@@ -30,7 +30,7 @@ export const WalletButtons = () => {
     return (
       <>
         <button className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500" onClick={disconnect}> 
-        {<img src="https://cryptologos.cc/logos/aptos-apt-logo.svg?v=029" className="w-4 h-4 me-2" />}
+        {<Image src="https://cryptologos.cc/logos/aptos-apt-logo.svg?v=029" className="w-4 h-4 me-2" alt="Aptos Logo" />}
             {accountAddress?.slice(0, 6)}...{accountAddress?.slice(-4)}
         </button>
           
