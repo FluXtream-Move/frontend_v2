@@ -28,30 +28,29 @@ export default function page() {
         </div>
         <Tabs defaultValue="overview" className="space-y-4">
           <TabsList>
-            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="overview">Dashboard</TabsTrigger>
             <TabsTrigger value="analytics" disabled>
-              Completed
+              Completed Flows
             </TabsTrigger>
           </TabsList>
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">
+                  <CardTitle className="text-sm font-medium ">
                     Total Assests
-                  </CardTitle>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="h-4 w-4 text-muted-foreground"
-                  >
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                  </svg>
+                  </CardTitle>  
+                  <div className="inline-flex items-center gap-[2px] px-[12px] py-[4px] relative flex-[0_0_auto] bg-blue-100 rounded-[14px] ">
+          <div className="relative w-fit mt-[-1.00px] font-caption-caption-1-medium font-[number:var(--caption-caption-1-medium-font-weight)] text-[#0058aa] text-[length:var(--caption-caption-1-medium-font-size)] tracking-[var(--caption-caption-1-medium-letter-spacing)] leading-[var(--caption-caption-1-medium-line-height)] whitespace-nowrap [font-style:var(--caption-caption-1-medium-font-style)]">
+            10k
+          </div>
+          <div className="relative w-[16px] h-[16px]">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.03031 2.80304C8.73742 2.51015 8.26254 2.51015 7.96965 2.80304L3.30298 7.46971C3.01009 7.7626 3.01009 8.23748 3.30298 8.53037C3.59588 8.82326 4.07075 8.82326 4.36364 8.53037L7.74998 5.14403V12.6667C7.74998 13.0809 8.08577 13.4167 8.49998 13.4167C8.91419 13.4167 9.24998 13.0809 9.24998 12.6667V5.14403L12.6363 8.53037C12.9292 8.82326 13.4041 8.82326 13.697 8.53037C13.9899 8.23748 13.9899 7.7626 13.697 7.46971L9.03031 2.80304Z" fill="#0058AA"/>
+</svg>
+
+          </div>
+        </div>
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">$231.89</div>
